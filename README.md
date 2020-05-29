@@ -6,22 +6,11 @@
 ```
 Provide an overview and description of a standard source control process for a large project
 ```
-![Source Control](./docs/version_control.jpg)
-*image stolen from https://www.smartsheet.com/*
+As stated in my T2A1 Workbook, source control (or version control) is the practice of tracking and managing changes to code. 
 
-Source control = version control
-Online repository eg github
-Branching
-Merging (staging environment)
-Git Flow
-
-Source control (or version control) is the practice of tracking and managing changes to code. 
-
-A source code management (SCM) system is utilized to streamline the development process and to provide a centralized source for all of the code.
+Usually, a source code management (SCM) system is utilized to streamline the development process and to provide a centralized source for all of the code.
 
 SCM systems allow the tracking of code changes, revision history for the code, and the ability to revert to previous versions of a project when needed. 
-
-By using a SCM system, you can collaborate on code with your team, isolate your work until it is ready, and quickly trouble-shoot issues by identifying who made changes and what the changes were. 
 
 A standard process for managing source control is as follows:
 1.	Use a source control system.
@@ -33,6 +22,17 @@ A standard process for managing source control is as follows:
 7.	Commit often 
 8.	Make extensive, detailed notes in the check-in comments about why the changes were made.
 
+By using a SCM system (for example, Git), teams can collaborate on code, isolate work until it is ready, and quickly trouble-shoot issues by identifying who made the changes, and what the changes were. This is of great importance when teams are working together on large projects.
+
+![Source Control](./docs/version_control.jpg)
+*image stolen from https://www.smartsheet.com/*
+
+The diagram above is a great example of Distributed Version Control. At a high level, the process is as follows:
+
+Each developer will **PULL** the most recent code from the Main Repository, they will then **BRANCH** the code depending on what they are intending to work on (and work on this code on their local device).  Once the desired changes/updates have been made, the developer will **COMMIT** and **PUSH** the updated code to be **MERGED** with the Main Repository.  
+
+A popular framework used in large projects is Gitflow - a strict branching model that the whole team must adhere to.  Gitflow ususally consists specified branches such as Master,  Release, Develop, Feature and Hotfix.
+
 ## Question 2
 ```
 What are the most important aspects of quality software?
@@ -40,18 +40,28 @@ What are the most important aspects of quality software?
 ![Source Control](./docs/quality.png)
 *image stolen from http://www.davidchappell.com*
 
-•	Functional Quality
-•	Structural Quality
-•	Functional Quality
+The aspects of quality software can be divided into three specific areas:
+- Process Quality: The quality of the practices, processes and procedures used by the Development Team.
+- Structural Quality: The quality of the actual codebase. 
+- Functional Quality: The overall quality of the software experienced by the end user.
 
-•	Reliable
-•	Understandable
-•	Modifiable
-•	Usabille
-•	Scalable
-•	Testable
-•	Portable
-•	Efficient
+Quality software must be:
+
+**Usable:** Needless to say the software needs to be completely seamless and free of defects for the end user.
+
+**Reliable:** it must work EVERY TIME and be free of bugs 
+
+**Understandable:** many team members will come and go throughout the life of a large organisation, and it is of vital impratnce that the code is understandable to anyone new joining the team.  This is achieved by practices such as commenting code and documentation in order to avoid technical debt.
+
+**Modifiable:** The software neeeds to be able to be modified depending on new and changing business requirements. 
+
+**Scalable:** Most successful business will need to scale at some point, and by allowing for this possiblilty from the very beginning, this can save a lot of work down the road. 
+
+**Testable:** A high level of testability ensures easy and early detection of bugs and defects in  software thereby saving on cost and time.
+
+**Portable:** Quality software needs the ability to be run on multiple different devices and operating systems. 
+
+**Efficient:** It is important for quality software to be as efficient as possible in order to optimize performance and get the maximum retorn on efforts. 
 
 ## Question 3
 ```
