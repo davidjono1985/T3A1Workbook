@@ -84,41 +84,109 @@ Node.js
 ```
 A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 ```
-Project management methodologies
-Programming and updates/changes to languages – technical knowledge – html/css/backend
-Testing
-Basic design – Responsive design
-Photoshop etc
-SEO
-marketing
-Security – Understanding common security attacks and how to prevent them
-Image Resizing and Effects
-Patience
-Time Management and Detailed Planning
-Documentation
-Deployment/hosting
-Conversational and negotiation
-Understanding of the business and what they want to achieve
+
+A competent team will require skills and knowledge in the following areas:
+
+- An understanding of the business and what the client is trying to achieve,
+
+- Programming/technical knowledge (html/css/backend) as well as the ongoing updates/changes to individual programming languages,
+
+- Testing procedures and practices,
+
+- Basic design/responsive design,
+
+- Graphics creation and manipulation eg image resizing, effects and graphic design - and the programs used to make this happen (Photoshop, Illustrator, Indesign etc),
+
+- A basic understanding of marketing and SEO (Search Engine Optimization)
+
+- A great uderstanding of common security attacks and how to prevent them,
+
+- Project management methodologies (eg. Agile implementation),
+
+- Time Management and Detailed Planning
+
+- Ability to write quality documentation,
+
+- Ability to deploy/host the website,
+
+- Soft skills such as conversational, negotiation, patience, emotional intelligence, resilience
+
 
 
 ## Question 5
 ```
 With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 ```
-Rad Kelly's
+I would like to refer to my marketplace project - Rad Kelly's Beard Exchange.
 
 ![Source Control](./docs/rad_kellys.png)
 *I own this image and you cannot have it*
+
+I required a great deal of knowldege and skills to create this application.
+
+User Stories and wireframes
+Ruby
+Rails
+MVC
+Routes
+CRUD
+Git
+Relational Database
+Photoshop and Illustrator
+AWS
+Heroku
+HTML
+CSS and SCSS
+Bootstrap
+
+
+First I needed an understanding of the Ruby Programing Language and the Rails Applicatoin Framework.
+
+Rails followed the MVC structure and used PostgresSQL database.
+
+To overcome technical challenges, 
+
+Work it out myself using debugging tools
+
+
+I would first try and find an online source but in the absence of that I utilized my peers and educators to help me with these technical issues.  
+
+To overcome emotional challenges
+With regards to my mindset, I practiced guided breathing and meditation - especially during the more stressful times.
+
+
+
+
+
+
 
 ## Question 6
 ```
 With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 ```
 
-Read it 'n' Wipe
+I would like to make mention of my most recent project for the Coder Academy Hackathon -  Read it 'n' Wipe.
 
 ![Source Control](./docs/read_wipe.jpg)
 *I own this image and you cannot have it*
+
+Coming into the project I wasn't entirely sure where my knowledge and skills were at.  I thought I was keeping up with my studies as each day we go through content one component at a time, and by listening in, I was confident I understood what is going on
+
+When you then have to go and build something from scratch using everything you have learnt, it turns out it was a completely different story. but never an entire project from start to finish.  
+
+I had a great idea for the business, and was able to contribute to the overall outcome with things such as wireframes, logo designs and creating content for the site, but the actual back-end and functionality I was amazed at how much I still didn't know.  
+
+I was fortunate enough to be in a team with some very bright individuals, and was fortunate enough to follow along with what they were doing 
+
+
+Using this as a valuable lesson, some improvements I will make in similar projects is
+
+Planning and user stories
+Work better collaboratively
+More personal practice
+Gain a better understanding of MERN 
+Gain a better understanding of HTML/CSS
+
 
 ## Question 7
 ```
