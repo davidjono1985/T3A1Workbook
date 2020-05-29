@@ -235,22 +235,33 @@ For the code snippet provided below, write comments for each line of code to exp
 **Code Snippet:**
 
 ```javascript
-
+//creation of Car class (parent class) - this will specify the shared properties and methods that object produced from this class will have
 class Car {
+//constructor() method - this is used to set initial values of the object. Javascript calls the constructor() method every time it creates a new instance of the class.
   constructor(brand) {
+//In the context of class "this" refers to an instance of that class.  In class Car,  "this" is used to set the value of the Car instance's carname property to the brand argument. 
     this.carname = brand;
   }
+//class method created called present()
   present() {
+//when the present() method is called it will return a string "I have a" followed by the property set in the constructor)    
     return 'I have a ' + this.carname;
+    
   }
-}
 
+}
+//creation of Car class (child class) - this will have access to all of the instance properties and methods of the parent class and can add it's own properties and methods in addition to these.
 class Model extends Car {
+//constructor() method including argument "brand" from Car class and new argument "mod"
   constructor(brand, mod) {
+// The child class constructor calls the parent class constructor using this super()method
     super(brand);
+     //"this" is used to set the value of the Model instance's model property to the mod argument. 
     this.model = mod;
   }
+  //class method created called show()
   show() {
+     
     return this.present() + ', it was made in ' + this.model;
   }
 }
