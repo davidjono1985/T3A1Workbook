@@ -73,7 +73,7 @@ Outline a standard high level structure for a MERN stack application and explain
 ![Source Control](./docs/mern2.png)
 *image stolen from https://levelup.gitconnected.com/*
 
-4 components: provide an end-to-end framework for developers to work in
+There are four component to the MERN stack that provides an end-to-end framework for developement
 Mongo DB:
 Express.js
 React
@@ -192,26 +192,153 @@ Gain a better understanding of HTML/CSS
 ```
 Explain control flow, using an example from the JavaScript programming language
 ```
-The control flow is the order in which the computer executes statements in a script. ... A typical script in JavaScript or PHP (and the like) includes many control structures, including conditionals, loops and functions. Parts of a script may also be set to execute when events occur.
+Control flow is the order that methods, instructions, and statements are evaluated and executed when a program is running. A good example of this from the Javascript programming language is a "for" loop: 
+
+``` javascript
+const vacationSpots = ['Bali', 'Paris', 'Hawaii'];
+
+for (let i = 0; i < vacationSpots.length; i++) {
+  console.log("I would love to visit " + vacationSpots[i]);
+}
+
+  ```
+In the code above, an array of popular vacation spots is created and assigned to the vactationSpots variable using the const declaration. 
+
+From here, the **for** loop is used:
+
+- The initialization is **let i = 0**, so the loop will start counting at 0.
+
+- The stopping condition is **i < vacationSpots.length**, meaning the loop will run as long as the iterator variable, **i** is less than the total number of elements in the vacationSpots array.
+
+- The iteration statement is **i++**. This means after each loop, the value of **i** will increase by 1. In the first iteration **i** will equal 0, for the second iteration it will equal 1 etc.
+
+- The code block inside of the curly braces, **console.log("I would love to visit " + vacationSpots[i]**, will execute until the condition evaluates to false. Each time it loops trhough, the **i** in **vacationSpots[i]** is going to increase by 1, therefore accessing a new value from the array each time.
+
+This for loop makes it possible to write 
+I would love to visit Bali
+I would love to visit Paris
+I would love to visit Hawaii
+programmatically.
 
 ## Question 8
 ```
 Explain type coercion, using examples from the JavaScript programming language
 ```
 
-Type coercion is the process of converting value from one type to another (such as string to number, object to boolean, and so on). Any type, be it primitive or an object, is a valid subject for type coercion. To recall, primitives are: number, string, boolean, null, undefined
+Type coercion (or type conversion/type casting) is the changing of an object's data type into another data type, together with its value eg. changing an integer into a string, or a float into an integer.
+
+An example from the JavaScript programming language is the **toString()** method:
+```javascript
+//will return the number literal 666 as a string
+(666).toString() 
+```
+The **Number()** method can convert booleans to numbers:
+```javascript
+//will return 0
+Number(false) 
+//will return 1
+Number(true) 
+```
+JavaScript will automatically try to convert data types if it is operating on a wrong type.  This is called Automatic Type Conversion. 
+
+![Source Control](./docs/auto.png)
+*example stolen from https://www.w3schools.com/ *
 
 ## Question 9
 ```
-Explain data types, using examples from the JavaScript programming language
+Explain data types, using examples from the JavaScript programming language. 
 ```
-In JavaScript, there are 6 primitive data types: string, number, boolean, null, undefined, symbol (new in ECMAScript 2015)
+In JavaScript, there are 6 primitive data types. These are not objects, they are immutable and have no methods of their own: 
+- boolean, 
+- number,
+- string,
+- symbol
+- null, 
+- undefined
+
+Everything else is an Object data type which includes arrays and objects.
+
+For the purposes of explaining datatypes using the Javascript programming language I will describe the 6 primatives.
+
+**Booleans:** can only have two values either true or false
+
+```javascript
+var d = 10;
+var t = 10;
+var j = 15;
+// Returns true
+(d == t)  
+// Returns false
+(d == j)       
+```
+**Numbers:** Only one type of numbers exists in Javascript and can be written with or without decimals
+
+```javascript
+// with decimals
+var d1 = 69.00;  
+// without decimals
+var d2 = 69;        
+```
+**Strings:** are a group of characters that usually represent a sentence or a word written with single or double quotes
+
+```javascript
+//David Johnson is a string and can be in single or double quotation marks
+var student = "David Johnson";   
+```
+**Symbols:** a unique value that's not equal to any other value
+```javascript
+typeof Symbol('d')
+```
+**Null:** is nothing - no value
+
+```javascript
+var student = {name:"David Johnson", age:35, favouriteFood:"pizza"};
+// Now the value of student is set to null, but the type is still an object
+student = null; 
+```
+**Undefined:** a declared variable that hasn't been given a value
+
+```javascript
+// variable has been declared but value and type is undefined
+var student; 
+```
+
+
 
 ## Question 10
 ```
 Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 ```
-As you can see, JavaScript gives you some powerful ways to manipulate arrays — you can alter the elements at the start of an array with unshift() and shift() , modify the end of an array with push() and pop() , and add or remove elements at any point in an array with splice()
+There are many ways to manipulate arrays in JavaScript. The most common is by utilizing some powerful built-in methods.  Some of the most popular Array Methods are: 
+```javascript
+concat()  // used to merge arrays by returning a new array
+
+indexOf()  // returns the first index found in the array of the given element
+
+join()  // returns a new string by joining elements in the array (concatenation)
+
+lastIndexOf()  // returns the last index found in the array of the given element
+
+pop()  // changes the lenght of an array by removing the last element and returning it.
+
+push()  // adds one or multiple elements to the end of an array and returns new length of that array
+
+reverse()  // reverses array - the first element becomes the last and vice versa
+
+shift()  // changes the length of array by removing the first element.  It returns the removed element
+
+slice()  // This does not modify the original array.  It returns a copy of a portion of the array based on what is selected as the eginning and end index
+
+sort()  // returns a sorted array - the default return is in ascending order
+
+splice()  // changes contents of array by removing/replacing existing elements and/or adding new elements
+
+toString()  // returns a single string of the elements in array
+
+unshift()  // adds one or multiple elements to beginning of array Returns new length of  array.
+
+valueOf()  //returns primitive value of the object that is specified.
+```
 
 
 ## Question 11
@@ -261,13 +388,19 @@ class Model extends Car {
   }
   //class method created called show()
   show() {
-     
+ //when the showt() method is called it will return the value for the parents() function plus the string ", it was made in" plus the value assigned to the model property.
+ // it will read something like "I have a (brand of car), it was made in (year)"
     return this.present() + ', it was made in ' + this.model;
   }
 }
 
+//creates a variable called makes and assignes an array of different car companies
 let makes = ["Ford", "Holden", "Toyota"]
+
+//creates a variable called models and uses JavaScripts built-in array constructor to create an array of 40 elements years starting at 1980 moving up consecutively in years
 let models = Array.from(new Array(40), (x,i) => i + 1980)
+
+//This is a function that tax a minimum and maximum number
 
 function randomIntFromInterval(min,max) { // min and max included
     return Math.floor(Math.random()*(max-min+1)+min);
