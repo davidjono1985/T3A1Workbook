@@ -12,7 +12,7 @@ Usually, a source code management (SCM) system is utilized to streamline the dev
 
 SCM systems allow the tracking of code changes, revision history for the code, and the ability to revert to previous versions of a project when needed. 
 
-A standard process for managing source control is as follows:
+Best practice for managing source control is as follows:
 1.	Use a source control system.
 2.	Keep your source code in source control 
 3.	Ensure the working file is from the latest version of the source file.
@@ -37,8 +37,8 @@ A popular framework used in large projects is Gitflow - a strict branching model
 ```
 What are the most important aspects of quality software?
 ```
-![Source Control](./docs/quality.png)
-*image stolen from http://www.davidchappell.com*
+![Quality](./docs/quality.png)
+*image pilfered from http://www.davidchappell.com*
 
 The aspects of quality software can be divided into three specific areas:
 - Process Quality: The quality of the practices, processes and procedures used by the Development Team.
@@ -67,18 +67,29 @@ Quality software must be:
 ```
 Outline a standard high level structure for a MERN stack application and explain the components
 ```
-![Source Control](./docs/mern1.png)
-*image stolen from https://www.mongodb.com/*
 
-![Source Control](./docs/mern2.png)
-*image stolen from https://levelup.gitconnected.com/*
+There are four component to the MERN stack whcih provides an end-to-end framework for developement:
 
-There are four component to the MERN stack that provides an end-to-end framework for developement
-Mongo DB:
-Express.js
-React
-Node.js
+**Mongo DB:** A document-orientated NoSQL database. It can handle high volume storage and unlike relational databases that use tables and rows, it instead uses collections and documents.
+
+**Express.js:** is a flexible Node.js web application framework with a large set of features for web and mobile development
+
+**React:** is an open-source Javascript library for building user interfaces and is used for handling the view layer in the MVC architecural pattern.
+
+**Node.js:** Node.js is an open-source, cross-platform, server environment that is able to execute JavaScript code outside of a web browser.
  
+A MERN stack application follows this App structure:
+
+![Mern](./docs/mern2.png)
+*image appropriated from https://levelup.gitconnected.com/*
+
+As you can see in the diagram above, the structure can be separated into 3 main areas, the Client Tier, The Business Logic Tier and the Database Tier.
+
+**The Database Tier** contains the database server (in mern the database is MongoDB) and this houses all the information that can be created, read, updated and deleted.  The data is requested and sent to the Application Server.
+
+**The Business Logic Tier** is the brains of the operation.  The back-end is built using Express and Node and is sent to the Client through HTML.
+
+**The Client Tier** is what the user can see on their desktop.  It uses React to creat views on the browser.  Information is reqquested from the Application Server though HTTP requests.
 
 ## Question 4
 ```
@@ -119,46 +130,30 @@ With reference to one of your own projects, discuss what knowledge or skills wer
 ```
 I would like to refer to my marketplace project - Rad Kelly's Beard Exchange.
 
-![Source Control](./docs/rad_kellys.png)
+![RK](./docs/rad_kellys.png)
 *I own this image and you cannot have it*
 
-I required a great deal of knowldege and skills to create this application.
+I required a great deal of knowldege and skills to create this application. This is not a comprehensive list but it outlines the main things I needed to learn and master to make it all happen:
 
-User Stories and wireframes
-Ruby
-Rails
-MVC
-Routes
-CRUD
-Git
-Relational Database
-Photoshop and Illustrator
-AWS
-Heroku
-HTML
-CSS and SCSS
-Bootstrap
+- Project management, User Stories,Wireframes and Mood Boards using programs like Trello and LucidChart
+- Back-end development using the Ruby Programming language
+- The Rails framework including the Model View Controller design model
+- Git and Github
+- Relational Databases eg. PostgreSQL, Schema's, Routing and CRUD (create, read, update, delete)
+- Photoshop and Illustrator for logos, icons and image manipulation
+- Amazon Web Services for image upload functionality
+- Heroku for application deployment
+- HTML, CSS, SCSS, Bootstrap for creating the views of the application.
 
+To overcome technical challenges while completing this project, I would first try to work it out myself by reading error messages and utilizing debugging tools and trial and error.
 
-First I needed an understanding of the Ruby Programing Language and the Rails Applicatoin Framework.
+I would then try and find an online source because nothing is really new in coding and as long as you somewhat understand what the problem is, it's more than likely someone else in the world has encountered it beofre and provided an answer on sites such as Stack Overflow.
 
-Rails followed the MVC structure and used PostgresSQL database.
+If I still could not come up with an answer I would then utilize my peers and educators to help me overcome these technical issues.  
 
-To overcome technical challenges, 
+Other than technical issues it was also important to overcome emotional challenges such as self-induced stress.
 
-Work it out myself using debugging tools
-
-
-I would first try and find an online source but in the absence of that I utilized my peers and educators to help me with these technical issues.  
-
-To overcome emotional challenges
-With regards to my mindset, I practiced guided breathing and meditation - especially during the more stressful times.
-
-
-
-
-
-
+I found listening to music, guided breathing/meditation, and conversing with friends and peers extremely helpful especially during the more stressful times.
 
 ## Question 6
 ```
@@ -167,25 +162,24 @@ With reference to one of your own projects, evaluate how effective your knowledg
 
 I would like to make mention of my most recent project for the Coder Academy Hackathon -  Read it 'n' Wipe.
 
-![Source Control](./docs/read_wipe.jpg)
-*I own this image and you cannot have it*
+![RWl](./docs/read_wipe.jpg)
+*This image is also of my own creation - don't touch it*
 
-Coming into the project I wasn't entirely sure where my knowledge and skills were at.  I thought I was keeping up with my studies as each day we go through content one component at a time, and by listening in, I was confident I understood what is going on
+Coming into the project I wasn't entirely sure where my knowledge and skills were at.  I thought I was keeping up with my studies as each day we go through content one component at a time, and by listening in, I was confident I understood what was going on.
 
-When you then have to go and build something from scratch using everything you have learnt, it turns out it was a completely different story. but never an entire project from start to finish.  
+When you THEN have to go and build something from scratch using everything you have learnt, it turns out this was a completely different story. I definietley felt I was thrown into the deep end straight away.
 
-I had a great idea for the business, and was able to contribute to the overall outcome with things such as wireframes, logo designs and creating content for the site, but the actual back-end and functionality I was amazed at how much I still didn't know.  
+I had a great idea for the business, and was able to contribute to the overall outcome with things such as wireframes, logo designs and creating content for the site, but the actual back-end and functionality I was amazed at how much I still didn't know.
 
-I was fortunate enough to be in a team with some very bright individuals, and was fortunate enough to follow along with what they were doing 
+I was fortunate enough to be in a team with some very bright individuals, was able to follow along with what they were doing.  This was a valuable learning experience for me and I'm amazed how much I picked up in only 3 days of doing the project.  
 
+Using this as a valuable lesson, some improvements I will make in the future is:
 
-Using this as a valuable lesson, some improvements I will make in similar projects is
-
-Planning and user stories
-Work better collaboratively
-More personal practice
-Gain a better understanding of MERN 
-Gain a better understanding of HTML/CSS
+- Planning and user stories and keeping up to date with the do, doing, done cycle.
+- Work better collaboratively and offer to contribute more even if it gives me anxiety.
+- More personal practice doing coding challenges and investing more time into classroom activities
+- Gain a better understanding of MERN 
+- Gain a better understanding of HTML/CSS (and invest in learning REACT next term)
 
 
 ## Question 7
@@ -241,8 +235,8 @@ Number(true)
 ```
 JavaScript will automatically try to convert data types if it is operating on a wrong type.  This is called Automatic Type Conversion. 
 
-![Source Control](./docs/auto.png)
-*example stolen from https://www.w3schools.com/ *
+![Conversion](./docs/auto.png)
+*example shanghaied from https://www.w3schools.com/ *
 
 ## Question 9
 ```
@@ -313,13 +307,28 @@ There are many ways to manipulate arrays in JavaScript. The most common is by ut
 ```javascript
 concat()  // used to merge arrays by returning a new array
 
+//eg.
+const arraya = ['w', 'i', 'g'];
+const arrayb = ['g', 'l', 'e'];
+const arrayc = arraya.concat(arrayb);
+
+console.log(arrayc);
+
+// expected output: Array ["w", "i", "g", "g", "l", "e"]
+
+pop()  // changes the lenght of an array by removing the last element and returning it.
+const plants = ['tree', 'shrub', 'palm', 'grass', 'cabbage'];
+
+console.log(plants.pop());
+// expected output: "cabbage"
+
+//There are many more......
+
 indexOf()  // returns the first index found in the array of the given element
 
 join()  // returns a new string by joining elements in the array (concatenation)
 
 lastIndexOf()  // returns the last index found in the array of the given element
-
-pop()  // changes the lenght of an array by removing the last element and returning it.
 
 push()  // adds one or multiple elements to the end of an array and returns new length of that array
 
@@ -345,14 +354,97 @@ valueOf()  //returns primitive value of the object that is specified.
 ```
 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 ```
-In JavaScript objects are simply a data structure made up of key-value pairs. A blueprint for an object can be made by using a function that acts as a constructor function for the objects. You can also create an object literal that will result in a single object that you can't duplicate
+Objects in JavaScript are a data structure made up of key-value pairs. Like array manipulation, Javascript also has powerful built in methods for objects. The following describes the various ways these methods can manipulate objects:
+
+```javascript
+Object.assign() // Copies the values and properties from one or many source objects to a single target object.
+
+const target = { a: 1, b: 2 };
+
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+// expected output: Object { a: 1, b: 4, c: 5 }
+console.log(target);
+// expected output: Object { a: 1, b: 4, c: 5 }
+console.log(returnedTarget);
+
+Object.keys() //Returns array of names of all the given object's string properties.
+
+const object1 = {
+
+  a: 'somestring',
+
+  b: 42,
+
+  c: false
+};
+// expected output: Array ["a", "b", "c"]
+console.log(Object.keys(object1));
+
+//There are many more.....
+
+Object.setPrototypeOf() //This sets the prototype of the object.
+
+Object.getPrototypeOf() //Returns the prototype of the object.
+
+Object.getOwnPropertySymbols() //All symbol properties are returned as an array.
+
+Object.create() // Uses the specified prototype object and properties to create a new object
+
+Object.is() //Compares two values and determines if they are the same value.
+
+Object.values() //Finds the values that corespond to a given options properties and returns in an array.
+
+Object.entries() //Returns an array containing key, value pairs 
+
+Object.getOwnPropertyNames() //Finds the names that corespond to a given options properties and returns in an array.
+
+Object.getOwnPropertyDescriptor() //A property descriptor is returned for a named property on an object.
+
+Object.freeze() //Freezes an object. Cannot be changed or deleted by other code.
+
+Object.isFrozen() //is the object frozen? Determination
+
+Object.seal() //Prevents code from deleting an objects properties.
+
+Object.isSealed() // Is the object sealed? Determination
+```
+
+
 
 ## Question 12
 ```
 Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 ```
+There are 2 static Javascript methods that can be used to convert between Javascript objects and JSON strings.  These are Stringify and Parse.
 
-Stringify, parse and DOM manipulation
+```javascript
+stringify() // is an inbuilt function which allows us to take a JavaScript object and convert it into a JSON string. 
+//example
+var value = { name: "Dave", age: 35, location: "Brisbane" };
+var result = JSON.stringify(value);
+Output : 
+{"name":"Dave", "age":35, "location":"Brisbane"}
+
+parse() // is an inbuilt function which allows us to take a JSON string and convert it into a JavaScript object. 
+
+let studentArray = JSON.parse("[{\"name\":\"D. Johnson\",\"nickname\":\"Jono\",\"dateOfBirth\":\"1985-04-16\"},{\"name\":\"B. Burger\",\"nickname\":\"Burgo\",\"dateOfBirth\":\"1986-11-26\"}]");
+
+Output:
+{
+name:"D. Johnson",
+nickname:"Jono",
+dateOfBirth:"1985-04-16"
+},
+{
+name:"B. Burger",
+nickname:"Burgo",
+dateOfBirth:"1986-11-26"
+}
+]
+```
+
 
 ## Question 13
 ```
@@ -364,14 +456,14 @@ For the code snippet provided below, write comments for each line of code to exp
 ```javascript
 //creation of Car class (parent class) - this will specify the shared properties and methods that object produced from this class will have
 class Car {
-//constructor() method - this is used to set initial values of the object. Javascript calls the constructor() method every time it creates a new instance of the class.
+  //constructor() method - this is used to set initial values of the object. Javascript calls the constructor() method every time it creates a new instance of the class.
   constructor(brand) {
-//In the context of class "this" refers to an instance of that class.  In class Car,  "this" is used to set the value of the Car instance's carname property to the brand argument. 
+    //In the context of class "this" refers to an instance of that class.  In class Car,  "this" is used to set the value of the Car instance's carname property to the brand argument. 
     this.carname = brand;
   }
-//class method created called present()
+  //class method created called present()
   present() {
-//when the present() method is called it will return a string "I have a" followed by the property set in the constructor)    
+    //when the present() method is called it will return a string "I have a" followed by the property set in the constructor)    
     return 'I have a ' + this.carname;
     
   }
@@ -379,39 +471,48 @@ class Car {
 }
 //creation of Car class (child class) - this will have access to all of the instance properties and methods of the parent class and can add it's own properties and methods in addition to these.
 class Model extends Car {
-//constructor() method including argument "brand" from Car class and new argument "mod"
+  //constructor() method including argument "brand" from Car class and new argument "mod"
   constructor(brand, mod) {
-// The child class constructor calls the parent class constructor using this super()method
-    super(brand);
-     //"this" is used to set the value of the Model instance's model property to the mod argument. 
-    this.model = mod;
+  // The child class constructor calls the parent class constructor using this super()method
+  super(brand);
+  //"this" is used to set the value of the Model instance's model property to the mod argument. 
+  this.model = mod;
   }
   //class method created called show()
   show() {
- //when the showt() method is called it will return the value for the parents() function plus the string ", it was made in" plus the value assigned to the model property.
- // it will read something like "I have a (brand of car), it was made in (year)"
+  //when the showt() method is called it will return the value for the parents() function plus the string ", it was made in" plus the value assigned to the model property.
+  // it will read something like "I have a (brand of car), it was made in (year)"
     return this.present() + ', it was made in ' + this.model;
   }
 }
 
-//creates a variable called makes and assignes an array of different car companies
+  //creates a variable called makes and assignes an array of different car companies
 let makes = ["Ford", "Holden", "Toyota"]
 
-//creates a variable called models and uses JavaScripts built-in array constructor to create an array of 40 elements years starting at 1980 moving up consecutively in years
+  //creates a variable called models and uses JavaScripts built-in array constructor to create an array of 40 elements years starting at 1980 moving up consecutively in years (1980 - 2019)
 let models = Array.from(new Array(40), (x,i) => i + 1980)
 
-//This is a function that tax a minimum and maximum number
-
-function randomIntFromInterval(min,max) { // min and max included
-    return Math.floor(Math.random()*(max-min+1)+min);
+  //Function created called randomIntFromInterval with the arguments min and max
+function randomIntFromInterval(min,max) { 
+  //When the function is called it will return a random whole number between the specified min and max values. The returned value is no lower than (and may possibly equal) min, and is less than (and may possibly equal) max
+  //But how does it work??
+  //The Math.floor function is in-built and is used to ensure the output number is a whole number (integer) by rounding it down.
+  //The Math.random() function is also inbuilt and on its own gives a random float between 0 and 1. 
+  //To to get a random number between the min and max Math.random() must be multiplied by the size of the range.  This is achieved by calculating max-min+1 (the +1 ensures the number specified as max is also included as a posible output) but on its own the range still goes from 0. Therefore the min value (+min) is then added to the number to ensure the number will be at least the min. 
+return Math.floor(Math.random()*(max-min+1)+min);
 }
 
+  //The for...of statement creates a loop that iterates over the elements in the models array above (that was created using the array constructor). As there were 40 elements created in the array, it loops through 40 times and assigns the value to model each iteration through the loop 
 for (model of models) {
-
+  //a value is assigned to make by using the randomIntFromInterval function to generate a random number. The arguments used for the function are min 0 and max is the number of elements in the makes array minus 1 (because indexes start at zero).  The number produced from the function is then used to assign that index of the "makes" array to "make". 
   make = makes[randomIntFromInterval(0,makes.length-1)]
+  //assings a new value to model just like the process for "make" above -  by assigning a random index from the "models" array to "model". As makes.length is used and not models.length, this limits the years from 40 possibilities to 3 possibilities.
   model = models[randomIntFromInterval(0,makes.length-1)]
-    
+   //mycar is a new instance of the Model class and passes in the arguments make and model that were assigned values in the 2 lines above. Make and model are used as the brand and mod arguments in the class Model constructor.
   mycar = new Model(make, model);
+  
+  //The "show" class method is called for the mycar instance and this is printed to the screen.
+  //"I have a (brand) and it was made in (year)"
   console.log(mycar.show())
 }
 ```
